@@ -1,0 +1,2 @@
+import{a as t,b as c,c as e,d as o}from"./chunk-RR5LSV6Q.js";var r=t(c());var i=t(e()),n=class extends HTMLElement{reactRoot=null;container=null;constructor(){super(),console.log("Keyboard ")}connectedCallback(){this.reactRoot||(this.container=document.createElement("div"),this.appendChild(this.container),this.reactRoot=(0,r.createRoot)(this.container)),this.renderReactComponent()}renderReactComponent(){this.reactRoot&&this.reactRoot.render((0,i.jsx)(o,{children:"Sowiso Keyboard"}))}};export{n as Keyboard};
+//# sourceMappingURL=src-ZDTVCMM2.js.map

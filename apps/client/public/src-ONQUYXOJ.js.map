@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../packages/player/src/index.tsx"],
+  "sourcesContent": ["import { createRoot, Root } from \"react-dom/client\";\nimport { Title } from \"@sowiso/shared\";\n\nexport class Player extends HTMLElement {\n  reactRoot: Root | null = null;\n  container: HTMLElement | null = null;\n\n  constructor() {\n    super();\n    console.log(\"Player \");\n  }\n\n  connectedCallback() {\n    if (!this.reactRoot) {\n      this.container = document.createElement(\"div\");\n      this.appendChild(this.container);\n      this.reactRoot = createRoot(this.container);\n    }\n    this.renderReactComponent();\n  }\n\n  renderReactComponent() {\n    if (this.reactRoot) {\n      this.reactRoot.render(<Title>Sowiso Player</Title>);\n    }\n  }\n}\n"],
+  "mappings": "6DAAA,IAAAA,EAAiC,OAuBL,IAAAC,EAAA,OApBfC,EAAN,cAAqB,WAAY,CACtC,UAAyB,KACzB,UAAgC,KAEhC,aAAc,CACZ,MAAM,EACN,QAAQ,IAAI,SAAS,CACvB,CAEA,mBAAoB,CACb,KAAK,YACR,KAAK,UAAY,SAAS,cAAc,KAAK,EAC7C,KAAK,YAAY,KAAK,SAAS,EAC/B,KAAK,aAAY,cAAW,KAAK,SAAS,GAE5C,KAAK,qBAAqB,CAC5B,CAEA,sBAAuB,CACjB,KAAK,WACP,KAAK,UAAU,UAAO,OAACC,EAAA,CAAM,yBAAa,CAAQ,CAEtD,CACF",
+  "names": ["import_client", "import_jsx_runtime", "Player", "Title"]
+}

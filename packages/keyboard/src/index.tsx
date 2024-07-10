@@ -1,5 +1,5 @@
 import { createRoot, Root } from "react-dom/client";
-import { Counter } from "@sowiso/shared";
+import { Title } from "@sowiso/shared";
 
 export class Keyboard extends HTMLElement {
   reactRoot: Root | null = null;
@@ -21,7 +21,7 @@ export class Keyboard extends HTMLElement {
 
   renderReactComponent() {
     if (this.reactRoot) {
-      this.reactRoot.render(<Counter />);
+      this.reactRoot.render(<Title>Sowiso Keyboard</Title>);
     }
   }
 }
