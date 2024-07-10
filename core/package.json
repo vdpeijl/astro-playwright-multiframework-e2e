@@ -1,0 +1,15 @@
+{
+  "name": "@sowiso/core",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs"
+  },
+  "dependencies": {
+    "@sowiso/keyboard": "*",
+    "@sowiso/player": "*",
+    "@sowiso/shared": "*"
+  },
+  "devDependencies": {
+    "esbuild": "0.23.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@sowiso/keyboard",
+  "exports": {
+    ".": "./src/index.tsx"
+  },
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "@sowiso/shared": "*"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@sowiso/shared",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
