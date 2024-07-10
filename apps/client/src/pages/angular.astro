@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Controls from '../components/Controls.astro';
+import { PlayerAngular } from '../components/PlayerAngular.component';
 ---
 
 <Layout title="Welcome to the Sowiso Player.">
-	<sowiso-keyboard></sowiso-keyboard>
-	<sowiso-player></sowiso-player>
-  <Controls></Controls>
+	<PlayerAngular client:load></PlayerAngular>
+	<Controls></Controls>
 </Layout>

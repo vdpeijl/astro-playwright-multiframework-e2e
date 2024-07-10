@@ -6,12 +6,26 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@analogjs/astro-angular": "^1.6.1",
+    "@angular-devkit/build-angular": "^18.1.0",
+    "@angular/animations": "^18.1.0",
+    "@angular/common": "^18.1.0",
+    "@angular/compiler": "^18.1.0",
+    "@angular/compiler-cli": "^18.1.0",
+    "@angular/core": "^18.1.0",
+    "@angular/language-service": "^18.1.0",
+    "@angular/platform-browser": "^18.1.0",
+    "@angular/platform-browser-dynamic": "^18.1.0",
+    "@angular/platform-server": "^18.1.0",
     "@astrojs/react": "^3.6.0",
     "@sowiso/player": "*",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.11.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.6.3",
+    "zone.js": "^0.14.7"
   }
 }
