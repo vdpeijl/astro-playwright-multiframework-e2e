@@ -1,8 +1,17 @@
-<button>
+<button id="check">
   Check
 </button>
 
-<button>
+<button id="evaluate">
   Evaluate
 </button>
 
+<script is:inline>
+  document.getElementById('check').addEventListener('click', () => {
+    console.log('Check triggered');
+  });
+
+  document.getElementById('evaluate').addEventListener('click', () => {
+    console.log('Evaluate triggered');
+  });
+</script>
