@@ -7,6 +7,10 @@ async function build() {
       bundle: true,
       minify: true,
       sourcemap: true,
+      splitting: true,
+      target: ["esnext"],
+      format: "esm",
+      chunkNames: "[name]-[hash]",
       outdir: "../apps/client/public",
     });
 

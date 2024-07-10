@@ -1,0 +1,2 @@
+import{a as t,b as i,c as e,d as o}from"./chunk-SYXMMCW4.js";var r=t(i());var c=t(e()),n=class extends HTMLElement{reactRoot=null;container=null;constructor(){super(),console.log("Player ")}connectedCallback(){this.reactRoot||(this.container=document.createElement("div"),this.appendChild(this.container),this.reactRoot=(0,r.createRoot)(this.container)),this.renderReactComponent()}renderReactComponent(){this.reactRoot&&this.reactRoot.render((0,c.jsx)(o,{}))}};export{n as Player};
+//# sourceMappingURL=src-4OEUK6FK.js.map

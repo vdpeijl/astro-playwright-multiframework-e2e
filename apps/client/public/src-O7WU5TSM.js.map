@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../packages/keyboard/src/index.tsx"],
+  "sourcesContent": ["import { createRoot, Root } from \"react-dom/client\";\nimport { Counter } from \"@sowiso/shared\";\n\nexport class Keyboard extends HTMLElement {\n  reactRoot: Root | null = null;\n  container: HTMLElement | null = null;\n\n  constructor() {\n    super();\n    console.log(\"Keyboard \");\n  }\n\n  connectedCallback() {\n    if (!this.reactRoot) {\n      this.container = document.createElement(\"div\");\n      this.appendChild(this.container);\n      this.reactRoot = createRoot(this.container);\n    }\n    this.renderReactComponent();\n  }\n\n  renderReactComponent() {\n    if (this.reactRoot) {\n      this.reactRoot.render(<Counter />);\n    }\n  }\n}\n"],
+  "mappings": "6DAAA,IAAAA,EAAiC,OAuBL,IAAAC,EAAA,OApBfC,EAAN,cAAuB,WAAY,CACxC,UAAyB,KACzB,UAAgC,KAEhC,aAAc,CACZ,MAAM,EACN,QAAQ,IAAI,WAAW,CACzB,CAEA,mBAAoB,CACb,KAAK,YACR,KAAK,UAAY,SAAS,cAAc,KAAK,EAC7C,KAAK,YAAY,KAAK,SAAS,EAC/B,KAAK,aAAY,cAAW,KAAK,SAAS,GAE5C,KAAK,qBAAqB,CAC5B,CAEA,sBAAuB,CACjB,KAAK,WACP,KAAK,UAAU,UAAO,OAACC,EAAA,EAAQ,CAAE,CAErC,CACF",
+  "names": ["import_client", "import_jsx_runtime", "Keyboard", "Counter"]
+}
